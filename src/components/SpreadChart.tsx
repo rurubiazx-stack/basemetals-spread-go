@@ -31,7 +31,7 @@ export function SpreadChart({ strategyId, current, decimals = 0, tick }: Props) 
     [strategyId, tick],
   );
 
-  const color = (current ?? 0) < 0 ? "#FF3B30" : "#00FF66";
+  const color = "#D67C1C";
   const crossesZero = useMemo(() => {
     if (data.length === 0) return false;
     const min = Math.min(...data.map((d) => d.v));
@@ -43,13 +43,6 @@ export function SpreadChart({ strategyId, current, decimals = 0, tick }: Props) 
     <div className="detail-section chart-section">
       <div className="chart-head">
         <div className="detail-title">实时价差走势</div>
-        <div className="chart-meta">
-          <span className={`spread-val ${current === null ? "na" : current > 0 ? "pos" : current < 0 ? "neg" : "zero"}`}>
-            当前 {fmt(current, decimals)}
-          </span>
-          <span className="chart-tag">本次会话</span>
-          <span className="chart-tag">数据点 {data.length}</span>
-        </div>
       </div>
       <div className="chart-box">
         {data.length < 2 ? (
