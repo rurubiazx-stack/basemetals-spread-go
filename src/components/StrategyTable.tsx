@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import type { StrategyConfig } from "@/types";
 import type { StrategyResult } from "@/lib/calculateStrategies";
 import { StrategyDetails } from "@/components/StrategyDetails";
-import { GROUP_LABEL, fmt, fmtClock, fmtPct, fmtPrice, fmtSigned, fmtVolume } from "@/lib/format";
+import { fmt, fmtClock, fmtPct, fmtPrice, fmtSigned, fmtVolume } from "@/lib/format";
 
 export type SortCol = "name" | "spread" | "change" | "changePct" | "volume" | null;
 

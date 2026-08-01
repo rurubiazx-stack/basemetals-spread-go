@@ -232,21 +232,23 @@
 .sg-toggle.active { background: var(--sg-header-red); border-color: var(--sg-header-red); color: #fff; }
 
 .sg-table-wrap { overflow-x: auto; background: var(--sg-bg); }
-.sg table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 1100px; }
+.sg table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 1020px; }
 .sg thead { position: sticky; top: 0; z-index: 10; }
-.sg th { background: var(--sg-table-header); color: var(--sg-text-dim); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; padding: 10px 12px; cursor: pointer; user-select: none; white-space: nowrap; border-bottom: 1px solid var(--sg-border); }
+.sg th { background: var(--sg-bg); color: var(--sg-text-dim); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; padding: 6px 12px; cursor: pointer; user-select: none; white-space: nowrap; border-top: 1px solid var(--sg-border); border-bottom: 1px solid var(--sg-border); }
 .sg th:hover { color: var(--sg-text); }
 .sg th.sorted-asc::after { content: " \25B2"; color: var(--sg-header-red); }
 .sg th.sorted-desc::after { content: " \25BC"; color: var(--sg-header-red); }
-.sg td { padding: 0 12px; height: 48px; border-bottom: 1px solid #1A1A1A; white-space: nowrap; }
+.sg td { padding: 6px 12px; height: 32px; border-bottom: 1px solid #1A1A1A; white-space: nowrap; }
 .sg tbody tr { transition: background 0.1s; }
 .sg tbody tr:hover { background: var(--sg-row-hover); }
 .sg tbody tr.expanded { background: var(--sg-row-hover); }
 
 .sg .col-center { text-align: center; }
+.sg .col-left { text-align: left; }
 .sg .col-right { text-align: right; }
-.sg .idx { color: var(--sg-dark-gray); font-size: 13px; font-family: var(--sg-font-num); font-variant-numeric: tabular-nums; }
-.sg .strat-name { color: var(--sg-text); font-weight: 600; font-size: 13px; letter-spacing: 0.2px; }
+.sg .idx { color: var(--sg-dark-gray); font-size: 12px; font-family: var(--sg-font-num); font-variant-numeric: tabular-nums; }
+.sg .strat-name { color: var(--sg-text); font-weight: 600; font-size: 12px; letter-spacing: 0.2px; }
+
 
 .sg .sg-badge {
   display: inline;
