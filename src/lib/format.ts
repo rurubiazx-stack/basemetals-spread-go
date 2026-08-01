@@ -38,14 +38,15 @@ export function fmtDateTime(ts: number | null): string {
 }
 
 export const GROUP_LABEL: Record<string, string> = {
-  cu: "铜",
-  al: "铝",
-  zn: "锌",
-  sn: "锡",
-  pb: "铅",
-  ni: "镍",
-  ss: "不锈钢",
-  lc: "碳酸锂",
+  cu: "CU",
+  al: "AL",
+  zn: "ZN",
+  sn: "SN",
+  pb: "PB",
+  ni: "NI",
+  ss: "SS",
+  lc: "LC",
+  ao: "AO",
 };
 
 /** 成交量：整数 + 千分位；无实时成交量显示 -- */
