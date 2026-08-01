@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import type { StrategyConfig } from "@/types";
 import type { StrategyResult } from "@/lib/calculateStrategies";
 import { StrategyDetails } from "@/components/StrategyDetails";
-import { GROUP_LABEL, fmt, fmtClock, fmtPct, fmtPrice, fmtSigned, fmtVolume } from "@/lib/format";
+import { fmt, fmtClock, fmtPct, fmtPrice, fmtSigned, fmtVolume } from "@/lib/format";
 
 export type SortCol = "name" | "spread" | "change" | "changePct" | "volume" | null;
 
@@ -43,15 +43,13 @@ export function StrategyTable({
       <table>
         <thead>
           <tr>
-            <th style={{ width: 40 }} className="col-center">
+            <th style={{ width: 40 }} className="col-left">
               #
             </th>
-            <th className={thClass("name")} onClick={() => onSortCol("name")}>
+            <th className={`col-left ${thClass("name")}`} onClick={() => onSortCol("name")}>
               策略名
             </th>
-            <th style={{ width: 90 }} className="col-center">
-              分组
-            </th>
+
             <th
               style={{ width: 130 }}
               className={`col-right ${thClass("spread")}`}
@@ -89,7 +87,7 @@ export function StrategyTable({
             <th style={{ width: 80 }} className="col-center">
               状态
             </th>
-            <th style={{ width: 70 }} className="col-center hide-mobile-col">
+            <th style={{ width: 70 }} className="col-left hide-mobile-col">
               更新
             </th>
             <th style={{ width: 40 }} className="col-center"></th>
@@ -98,7 +96,7 @@ export function StrategyTable({
         <tbody>
           {rows.length === 0 && (
             <tr>
-              <td colSpan={12} style={{ textAlign: "center", padding: 48, color: "#555" }}>
+              <td colSpan={11} style={{ textAlign: "center", padding: 48, color: "#555" }}>
                 无匹配策略
               </td>
             </tr>
@@ -115,11 +113,8 @@ export function StrategyTable({
                   onClick={() => onExpand(expanded ? null : s.id)}
                   style={{ cursor: "pointer" }}
                 >
-                  <td className="col-center idx">{i + 1}</td>
-                  <td className="strat-name">{s.name}</td>
-                  <td className="col-center">
-                    <span className={`sg-badge ${s.group}`}>{GROUP_LABEL[s.group]}</span>
-                  </td>
+                  <td className="col-left idx">{i + 1}</td>
+                  <td className="col-left strat-name">{s.name}</td>
                   <td className={`col-right${flash}`}>
                     <span className={`spread-val ${signClass(st?.spread)}`}>
                       {fmt(st?.spread ?? null, 0)}
@@ -159,7 +154,7 @@ export function StrategyTable({
                     />
 
                   </td>
-                  <td className="col-center hide-mobile-col">
+                  <td className="col-left hide-mobile-col">
                     <span className="updated-time">{fmtClock(st?.updatedAt ?? null)}</span>
                   </td>
                   <td className="col-center">
@@ -168,7 +163,7 @@ export function StrategyTable({
                 </tr>
                 {expanded && (
                   <tr className="detail-row">
-                    <td colSpan={12}>
+                    <td colSpan={11}>
                       <StrategyDetails strategy={s} state={st} tick={tick} />
                     </td>
                   </tr>
