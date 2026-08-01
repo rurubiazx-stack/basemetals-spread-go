@@ -1,4 +1,4 @@
-export type Group = "cu" | "al" | "zn" | "sn" | "pb" | "ni" | "ss" | "lc";
+export type Group = "cu" | "al" | "zn" | "sn" | "pb" | "ni" | "ss" | "lc" | "ao";
 export type Slot = "A" | "B" | "C" | "D";
 export type Direction = "买" | "卖";
 
