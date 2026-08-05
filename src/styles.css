@@ -331,9 +331,16 @@
   .sg-common-card { min-width: 132px; flex: 0 0 auto; }
   .sg .chart-box { height: 180px; }
   .sg-filter-bar { padding: 8px 12px; }
+  .sg-filter-group { flex: 0 0 100%; width: 100%; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 2px; }
+  .sg-filter-group::-webkit-scrollbar { display: none; }
+  .sg-filter-btn { flex: 0 0 auto; white-space: nowrap; padding: 6px 10px; }
   .sg-search { width: 100%; }
-  .sg table { min-width: 700px; }
+  .sg table { min-width: 0; font-size: 11px; }
+  .sg th, .sg td { padding: 6px 6px; }
+  .sg thead th:first-child, .sg tbody tr:not(.detail-row) td:first-child { display: none; }
+  .sg .strat-name { font-size: 11px; letter-spacing: 0; white-space: nowrap; }
   .sg .hide-mobile-col { display: none; }
+
 }
 
 /* 展开详情：宽屏两列（线图 ~60% / 腿明细 ~40%，腿明细不小于 620px），窄屏上下布局 */
