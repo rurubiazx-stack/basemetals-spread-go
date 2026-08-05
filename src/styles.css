@@ -337,7 +337,7 @@
   .sg-search { width: 100%; }
   .sg table { min-width: 0; font-size: 11px; }
   .sg th, .sg td { padding: 6px 6px; }
-  .sg th:first-child, .sg td:first-child { display: none; }
+  .sg thead th:first-child, .sg tbody tr:not(.detail-row) td:first-child { display: none; }
   .sg .strat-name { font-size: 11px; letter-spacing: 0; white-space: nowrap; }
   .sg .hide-mobile-col { display: none; }
 
