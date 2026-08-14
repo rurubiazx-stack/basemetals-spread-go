@@ -169,9 +169,11 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s165", name: "AO01-03", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AO2701-SH", dir: "买", lots: 1},{slot: "B", contract: "AO2703-SH", dir: "卖", lots: 1}] },
   { id: "s166", name: "AO03-05", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AO2703-SH", dir: "买", lots: 1},{slot: "B", contract: "AO2705-SH", dir: "卖", lots: 1}] },
   { id: "s167", name: "AO05-07", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AO2705-SH", dir: "买", lots: 1},{slot: "B", contract: "AO2707-SH", dir: "卖", lots: 1}] },
+  { id: "s168", name: "ZN2610-ZN3M[出口](US$,仓补+60)", group: "zn", formula: "(B+60)-(A*0.12*30/365*0.0375/D+1.5/5*2/D+B/6400*2+30/365*0.0375*A/D+A*0.0003/D)-A/D", decimals: 3, legs: [{slot: "A", contract: "ZN2610-SH", dir: "买", lots: 9},{slot: "B", contract: "ZN3M-LME", dir: "卖", lots: 2},{slot: "C", contract: "UC2612-SGX", dir: "卖", lots: 2},{slot: "D", contract: "UC2610-SGX", dir: "卖", lots: 0}] },
+  { id: "s169", name: "ZN2611-ZN3M[出口](US$,仓补+60)", group: "zn", formula: "(B+60)-(A*0.12*30/365*0.0375/D+1.5/5*2/D+B/6400*2+30/365*0.0375*A/D+A*0.0003/D)-A/D", decimals: 3, legs: [{slot: "A", contract: "ZN2611-SH", dir: "买", lots: 9},{slot: "B", contract: "ZN3M-LME", dir: "卖", lots: 2},{slot: "C", contract: "UC2612-SGX", dir: "卖", lots: 2},{slot: "D", contract: "UC2611-SGX", dir: "卖", lots: 0}] },
 ];
 
-/** 构建期校验：策略集合必须严格为 167 条（47 / 120）。 */
+/** 构建期校验：策略集合必须严格为 169 条。 */
 export function validateStrategies(list: StrategyConfig[] = STRATEGIES): void {
   const counts: Record<string, number> = { cu: 0, al: 0, zn: 0, sn: 0, pb: 0, ni: 0, ss: 0, lc: 0 };
   const ids = new Set<string>();
@@ -188,7 +190,7 @@ export function validateStrategies(list: StrategyConfig[] = STRATEGIES): void {
       if (!slots.has(v as never)) throw new Error(`${'${s.id}'} 公式变量 ${'${v}'} 无对应腿`);
     }
   }
-  if (list.length !== 167) throw new Error(`策略总数应为 167，实际 ${'${list.length}'}`);
+  if (list.length !== 169) throw new Error(`策略总数应为 169，实际 ${'${list.length}'}`);
 }
 
 
