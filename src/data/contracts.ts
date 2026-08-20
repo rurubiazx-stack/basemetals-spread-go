@@ -18,7 +18,7 @@ export interface ContractSource {
   kind: FetchKind;
   mode?: QuoteMode;
   label?: string;
-  /** proxy 合约相对 UC2608 的月份距离 */
+  /** proxy 合约相对 UC2609 的月份距离 */
   monthDistance?: number;
 }
 
