@@ -49,7 +49,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s045", name: "LME3M光亮铜-CU0-UC0", group: "cu", formula: "B*0.99-A*0.99*1.13*C-120", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU0-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC0-SGX", dir: "买", lots: 9}] },
   { id: "s046", name: "LME3M1号铜-CU0-UC0", group: "cu", formula: "B*0.97-A*0.97*1.13*C-120", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 17},{slot: "B", contract: "CU0-SH", dir: "卖", lots: 4},{slot: "C", contract: "UC0-SGX", dir: "买", lots: 9}] },
   { id: "s047", name: "LME3M2号铜-CU0-UC0", group: "cu", formula: "B*0.95-A*0.95*1.13*C-120", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU0-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC0-SGX", dir: "买", lots: 9}] },
-  { id: "s048", name: "CU08-09", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "CU2608-SH", dir: "买", lots: 1},{slot: "B", contract: "CU2609-SH", dir: "卖", lots: 1}] },
   { id: "s049", name: "CU09-10", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "CU2609-SH", dir: "买", lots: 1},{slot: "B", contract: "CU2610-SH", dir: "卖", lots: 1}] },
   { id: "s050", name: "CU10-11", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "CU2610-SH", dir: "买", lots: 1},{slot: "B", contract: "CU2611-SH", dir: "卖", lots: 1}] },
   { id: "s051", name: "CU11-12", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "CU2611-SH", dir: "买", lots: 1},{slot: "B", contract: "CU2612-SH", dir: "卖", lots: 1}] },
@@ -60,7 +59,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s056", name: "CU04-05", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "CU2704-SH", dir: "买", lots: 1},{slot: "B", contract: "CU2705-SH", dir: "卖", lots: 1}] },
   { id: "s057", name: "CU05-06", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "CU2705-SH", dir: "买", lots: 1},{slot: "B", contract: "CU2706-SH", dir: "卖", lots: 1}] },
   { id: "s058", name: "CU06-07", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "CU2706-SH", dir: "买", lots: 1},{slot: "B", contract: "CU2707-SH", dir: "卖", lots: 1}] },
-  { id: "s059", name: "AL08-09", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AL2608-SH", dir: "买", lots: 1},{slot: "B", contract: "AL2609-SH", dir: "卖", lots: 1}] },
   { id: "s060", name: "AL09-10", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AL2609-SH", dir: "买", lots: 1},{slot: "B", contract: "AL2610-SH", dir: "卖", lots: 1}] },
   { id: "s061", name: "AL10-11", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AL2610-SH", dir: "买", lots: 1},{slot: "B", contract: "AL2611-SH", dir: "卖", lots: 1}] },
   { id: "s062", name: "AL11-12", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AL2611-SH", dir: "买", lots: 1},{slot: "B", contract: "AL2612-SH", dir: "卖", lots: 1}] },
@@ -82,7 +80,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s078", name: "BC04-05", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "BC2704-INE", dir: "买", lots: 1},{slot: "B", contract: "BC2705-INE", dir: "卖", lots: 1}] },
   { id: "s079", name: "BC05-06", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "BC2705-INE", dir: "买", lots: 1},{slot: "B", contract: "BC2706-INE", dir: "卖", lots: 1}] },
   { id: "s080", name: "BC06-07", group: "cu", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "BC2706-INE", dir: "买", lots: 1},{slot: "B", contract: "BC2707-INE", dir: "卖", lots: 1}] },
-  { id: "s081", name: "NI08-09", group: "ni", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "NI2608-SH", dir: "买", lots: 1},{slot: "B", contract: "NI2609-SH", dir: "卖", lots: 1}] },
   { id: "s082", name: "NI09-10", group: "ni", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "NI2609-SH", dir: "买", lots: 1},{slot: "B", contract: "NI2610-SH", dir: "卖", lots: 1}] },
   { id: "s083", name: "NI10-11", group: "ni", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "NI2610-SH", dir: "买", lots: 1},{slot: "B", contract: "NI2611-SH", dir: "卖", lots: 1}] },
   { id: "s084", name: "NI11-12", group: "ni", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "NI2611-SH", dir: "买", lots: 1},{slot: "B", contract: "NI2612-SH", dir: "卖", lots: 1}] },
@@ -93,7 +90,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s089", name: "NI04-05", group: "ni", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "NI2704-SH", dir: "买", lots: 1},{slot: "B", contract: "NI2705-SH", dir: "卖", lots: 1}] },
   { id: "s090", name: "NI05-06", group: "ni", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "NI2705-SH", dir: "买", lots: 1},{slot: "B", contract: "NI2706-SH", dir: "卖", lots: 1}] },
   { id: "s091", name: "NI06-07", group: "ni", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "NI2706-SH", dir: "买", lots: 1},{slot: "B", contract: "NI2707-SH", dir: "卖", lots: 1}] },
-  { id: "s092", name: "SS08-09", group: "ss", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SS2608-SH", dir: "买", lots: 1},{slot: "B", contract: "SS2609-SH", dir: "卖", lots: 1}] },
   { id: "s093", name: "SS09-10", group: "ss", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SS2609-SH", dir: "买", lots: 1},{slot: "B", contract: "SS2610-SH", dir: "卖", lots: 1}] },
   { id: "s094", name: "SS10-11", group: "ss", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SS2610-SH", dir: "买", lots: 1},{slot: "B", contract: "SS2611-SH", dir: "卖", lots: 1}] },
   { id: "s095", name: "SS11-12", group: "ss", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SS2611-SH", dir: "买", lots: 1},{slot: "B", contract: "SS2612-SH", dir: "卖", lots: 1}] },
@@ -104,7 +100,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s100", name: "SS04-05", group: "ss", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SS2704-SH", dir: "买", lots: 1},{slot: "B", contract: "SS2705-SH", dir: "卖", lots: 1}] },
   { id: "s101", name: "SS05-06", group: "ss", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SS2705-SH", dir: "买", lots: 1},{slot: "B", contract: "SS2706-SH", dir: "卖", lots: 1}] },
   { id: "s102", name: "SS06-07", group: "ss", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SS2706-SH", dir: "买", lots: 1},{slot: "B", contract: "SS2707-SH", dir: "卖", lots: 1}] },
-  { id: "s103", name: "LC08-09", group: "lc", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "LC2608-GZ", dir: "买", lots: 1},{slot: "B", contract: "LC2609-GZ", dir: "卖", lots: 1}] },
   { id: "s104", name: "LC09-10", group: "lc", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "LC2609-GZ", dir: "买", lots: 1},{slot: "B", contract: "LC2610-GZ", dir: "卖", lots: 1}] },
   { id: "s105", name: "LC09-11", group: "lc", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "LC2609-GZ", dir: "买", lots: 1},{slot: "B", contract: "LC2611-GZ", dir: "卖", lots: 1}] },
   { id: "s106", name: "LC10-11", group: "lc", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "LC2610-GZ", dir: "买", lots: 1},{slot: "B", contract: "LC2611-GZ", dir: "卖", lots: 1}] },
@@ -120,7 +115,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s116", name: "LC05-06", group: "lc", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "LC2705-GZ", dir: "买", lots: 1},{slot: "B", contract: "LC2706-GZ", dir: "卖", lots: 1}] },
   { id: "s117", name: "LC05-07", group: "lc", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "LC2705-GZ", dir: "买", lots: 1},{slot: "B", contract: "LC2707-GZ", dir: "卖", lots: 1}] },
   { id: "s118", name: "LC06-07", group: "lc", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "LC2706-GZ", dir: "买", lots: 1},{slot: "B", contract: "LC2707-GZ", dir: "卖", lots: 1}] },
-  { id: "s119", name: "ZN08-09", group: "zn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "ZN2608-SH", dir: "买", lots: 1},{slot: "B", contract: "ZN2609-SH", dir: "卖", lots: 1}] },
   { id: "s120", name: "ZN09-10", group: "zn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "ZN2609-SH", dir: "买", lots: 1},{slot: "B", contract: "ZN2610-SH", dir: "卖", lots: 1}] },
   { id: "s121", name: "ZN10-11", group: "zn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "ZN2610-SH", dir: "买", lots: 1},{slot: "B", contract: "ZN2611-SH", dir: "卖", lots: 1}] },
   { id: "s122", name: "ZN11-12", group: "zn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "ZN2611-SH", dir: "买", lots: 1},{slot: "B", contract: "ZN2612-SH", dir: "卖", lots: 1}] },
@@ -131,7 +125,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s127", name: "ZN04-05", group: "zn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "ZN2704-SH", dir: "买", lots: 1},{slot: "B", contract: "ZN2705-SH", dir: "卖", lots: 1}] },
   { id: "s128", name: "ZN05-06", group: "zn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "ZN2705-SH", dir: "买", lots: 1},{slot: "B", contract: "ZN2706-SH", dir: "卖", lots: 1}] },
   { id: "s129", name: "ZN06-07", group: "zn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "ZN2706-SH", dir: "买", lots: 1},{slot: "B", contract: "ZN2707-SH", dir: "卖", lots: 1}] },
-  { id: "s130", name: "SN08-09", group: "sn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SN2608-SH", dir: "买", lots: 1},{slot: "B", contract: "SN2609-SH", dir: "卖", lots: 1}] },
   { id: "s131", name: "SN09-10", group: "sn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SN2609-SH", dir: "买", lots: 1},{slot: "B", contract: "SN2610-SH", dir: "卖", lots: 1}] },
   { id: "s132", name: "SN10-11", group: "sn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SN2610-SH", dir: "买", lots: 1},{slot: "B", contract: "SN2611-SH", dir: "卖", lots: 1}] },
   { id: "s133", name: "SN11-12", group: "sn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SN2611-SH", dir: "买", lots: 1},{slot: "B", contract: "SN2612-SH", dir: "卖", lots: 1}] },
@@ -142,7 +135,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s138", name: "SN04-05", group: "sn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SN2704-SH", dir: "买", lots: 1},{slot: "B", contract: "SN2705-SH", dir: "卖", lots: 1}] },
   { id: "s139", name: "SN05-06", group: "sn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SN2705-SH", dir: "买", lots: 1},{slot: "B", contract: "SN2706-SH", dir: "卖", lots: 1}] },
   { id: "s140", name: "SN06-07", group: "sn", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "SN2706-SH", dir: "买", lots: 1},{slot: "B", contract: "SN2707-SH", dir: "卖", lots: 1}] },
-  { id: "s141", name: "PB08-09", group: "pb", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "PB2608-SH", dir: "买", lots: 1},{slot: "B", contract: "PB2609-SH", dir: "卖", lots: 1}] },
   { id: "s142", name: "PB09-10", group: "pb", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "PB2609-SH", dir: "买", lots: 1},{slot: "B", contract: "PB2610-SH", dir: "卖", lots: 1}] },
   { id: "s143", name: "PB10-11", group: "pb", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "PB2610-SH", dir: "买", lots: 1},{slot: "B", contract: "PB2611-SH", dir: "卖", lots: 1}] },
   { id: "s144", name: "PB11-12", group: "pb", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "PB2611-SH", dir: "买", lots: 1},{slot: "B", contract: "PB2612-SH", dir: "卖", lots: 1}] },
@@ -173,7 +165,7 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s169", name: "ZN2611-ZN3M[出口](US$,仓补+60)", group: "zn", formula: "(B+60)-(A*0.12*30/365*0.0375/D+1.5/5*2/D+B/6400*2+30/365*0.0375*A/D+A*0.0003/D)-A/D", decimals: 3, legs: [{slot: "A", contract: "ZN2611-SH", dir: "买", lots: 9},{slot: "B", contract: "ZN3M-LME", dir: "卖", lots: 2},{slot: "C", contract: "UC2612-SGX", dir: "卖", lots: 2},{slot: "D", contract: "UC2611-SGX", dir: "卖", lots: 0}] },
 ];
 
-/** 构建期校验：策略集合必须严格为 169 条。 */
+/** 构建期校验：策略集合必须严格为 161 条。 */
 export function validateStrategies(list: StrategyConfig[] = STRATEGIES): void {
   const counts: Record<string, number> = { cu: 0, al: 0, zn: 0, sn: 0, pb: 0, ni: 0, ss: 0, lc: 0 };
   const ids = new Set<string>();
@@ -190,7 +182,7 @@ export function validateStrategies(list: StrategyConfig[] = STRATEGIES): void {
       if (!slots.has(v as never)) throw new Error(`${'${s.id}'} 公式变量 ${'${v}'} 无对应腿`);
     }
   }
-  if (list.length !== 169) throw new Error(`策略总数应为 169，实际 ${'${list.length}'}`);
+  if (list.length !== 161) throw new Error(`策略总数应为 161，实际 ${'${list.length}'}`);
 }
 
 
