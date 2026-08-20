@@ -117,16 +117,16 @@ function buildSource(contract: string): ContractSource | null {
   return null;
 }
 
-/** 常用价差用到的国内近月对（08-09），直接使用真实月份合约行情（nf_CU2608 / nf_CU2609 …）。 */
+/** 常用价差用到的国内近月对（09-10），直接使用真实月份合约行情（nf_CU2609 / nf_CU2610 …）。 */
 export const NEAR_SPREADS = [
-  { product: "CU", label: "CU08-09", front: "CU2608-SH", back: "CU2609-SH" },
-  { product: "AL", label: "AL08-09", front: "AL2608-SH", back: "AL2609-SH" },
-  { product: "NI", label: "NI08-09", front: "NI2608-SH", back: "NI2609-SH" },
-  { product: "ZN", label: "ZN08-09", front: "ZN2608-SH", back: "ZN2609-SH" },
-  { product: "SS", label: "SS08-09", front: "SS2608-SH", back: "SS2609-SH" },
-  { product: "SN", label: "SN08-09", front: "SN2608-SH", back: "SN2609-SH" },
-  { product: "PB", label: "PB08-09", front: "PB2608-SH", back: "PB2609-SH" },
-  { product: "LC", label: "LC08-09", front: "LC2608-GZ", back: "LC2609-GZ" },
+  { product: "CU", label: "CU09-10", front: "CU2609-SH", back: "CU2610-SH" },
+  { product: "AL", label: "AL09-10", front: "AL2609-SH", back: "AL2610-SH" },
+  { product: "NI", label: "NI09-10", front: "NI2609-SH", back: "NI2610-SH" },
+  { product: "ZN", label: "ZN09-10", front: "ZN2609-SH", back: "ZN2610-SH" },
+  { product: "SS", label: "SS09-10", front: "SS2609-SH", back: "SS2610-SH" },
+  { product: "SN", label: "SN09-10", front: "SN2609-SH", back: "SN2610-SH" },
+  { product: "PB", label: "PB09-10", front: "PB2609-SH", back: "PB2610-SH" },
+  { product: "LC", label: "LC09-10", front: "LC2609-GZ", back: "LC2610-GZ" },
 ] as const;
 
 function nearSpreadSources(): ContractSource[] {
