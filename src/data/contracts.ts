@@ -26,7 +26,7 @@ export const USD_CNH_KEY = "USD/CNH-SPOT";
 export const USD_CNH_SYMBOL = "fx_susdcnh";
 export const UC_MONTH_STEP = 0.015;
 export const UC_BASE_YEAR = 2026;
-export const UC_BASE_MONTH = 8;
+export const UC_BASE_MONTH = 9;
 export const UC_PROXY_LABEL = "USD/CNH 即期汇率推导，固定月差 0.015，非 SGX 实时行情";
 
 const LME_SYMBOLS: Record<string, string> = {
@@ -47,14 +47,14 @@ const UC_FIXES: Record<string, string> = {
   "UC26011-SGX": "UC2611-SGX",
   "UC26012-SGX": "UC2612-SGX",
   "UC2603-SGX": "UC2703-SGX",
-  "UC0-SGX": "UC2608-SGX",
+  "UC0-SGX": "UC2609-SGX",
 };
 
 export function normalizeContract(contract: string): string {
   return UC_FIXES[contract] ?? contract;
 }
 
-/** monthDistance = (year - 2026) * 12 + (month - 8)，跨年安全。 */
+/** monthDistance = (year - 2026) * 12 + (month - 9)，跨年安全。 */
 export function ucMonthDistance(contract: string): number | null {
   const m = normalizeContract(contract).match(/^UC(\d{2})(\d{2})-SGX$/);
   if (!m) return null;
