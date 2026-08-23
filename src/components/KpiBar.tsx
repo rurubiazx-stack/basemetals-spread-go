@@ -13,8 +13,8 @@ interface Props {
 /** 顶部三个跨市场常用价差，直接镜像现有策略结果 */
 const MIRROR_SPREADS: { label: string; strategyName: string }[] = [
   { label: "CMX0-LME3M", strategyName: "LME3M-COMEX0(CU,无成本)" },
-  { label: "LME3M-CU", strategyName: "CAD3M-CU08 (P+50,UC08,lvl)-120" },
-  { label: "LME3M-SN0", strategyName: "LmeSn3M-Sn2608-UC08(p650 lvl)-120" },
+  { label: "LME3M-CU", strategyName: "CAD3M-CU09(P+50,UC09,lvl)-120" },
+  { label: "LME3M-SN0", strategyName: "LmeSn3M-Sn2609-UC09(p650, lvl)-120" },
 ];
 
 function signClass(v: number | null) {
