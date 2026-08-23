@@ -147,7 +147,7 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s156", name: "AD12-01", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AD2612-SH", dir: "买", lots: 1},{slot: "B", contract: "AD2701-SH", dir: "卖", lots: 1}] },
   { id: "s157", name: "AD01-02", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AD2701-SH", dir: "买", lots: 1},{slot: "B", contract: "AD2702-SH", dir: "卖", lots: 1}] },
   { id: "s158", name: "AD02-03", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AD2702-SH", dir: "买", lots: 1},{slot: "B", contract: "AD2703-SH", dir: "卖", lots: 1}] },
-  { id: "s156", name: "AD03-04", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AD2703-SH", dir: "买", lots: 1},{slot: "B", contract: "AD2704-SH", dir: "卖", lots: 1}] },
+  { id: "s159", name: "AD03-04", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AD2703-SH", dir: "买", lots: 1},{slot: "B", contract: "AD2704-SH", dir: "卖", lots: 1}] },
   { id: "s160", name: "AD04-05", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AD2704-SH", dir: "买", lots: 1},{slot: "B", contract: "AD2705-SH", dir: "卖", lots: 1}] },
   { id: "s161", name: "AD05-06", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AD2705-SH", dir: "买", lots: 1},{slot: "B", contract: "AD2706-SH", dir: "卖", lots: 1}] },
   { id: "s162", name: "AD06-07", group: "al", formula: "A-B", decimals: 3, legs: [{slot: "A", contract: "AD2706-SH", dir: "买", lots: 1},{slot: "B", contract: "AD2707-SH", dir: "卖", lots: 1}] },
