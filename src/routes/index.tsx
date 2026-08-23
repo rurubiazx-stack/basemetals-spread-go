@@ -10,7 +10,7 @@ import { appendPoint } from "@/lib/spreadHistory";
 import type { Group, Quote, QuotesResponse, StrategyState } from "@/types";
 
 const TITLE = "SPREAD<GO> 实时价差监控看板";
-const DESC = "有色金属跨市与内盘套利实时价差看板：159 条策略的价差、涨跌、成交量与腿明细一屏监控。";
+const DESC = "有色金属跨市与内盘套利实时价差看板：156 条策略的价差、涨跌、成交量与腿明细一屏监控。";
 
 export const Route = createFileRoute("/")({
   head: () => ({
