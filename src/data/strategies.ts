@@ -163,7 +163,7 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s169", name: "ZN2611-ZN3M[出口](US$,仓补+60)", group: "zn", formula: "(B+60)-(A*0.12*30/365*0.0375/D+1.5/5*2/D+B/6400*2+30/365*0.0375*A/D+A*0.0003/D)-A/D", decimals: 3, legs: [{slot: "A", contract: "ZN2611-SH", dir: "买", lots: 9},{slot: "B", contract: "ZN3M-LME", dir: "卖", lots: 2},{slot: "C", contract: "UC2612-SGX", dir: "卖", lots: 2},{slot: "D", contract: "UC2611-SGX", dir: "卖", lots: 0}] },
 ];
 
-/** 构建期校验：策略集合必须严格为 161 条。 */
+/** 构建期校验：策略集合必须严格为 159 条。 */
 export function validateStrategies(list: StrategyConfig[] = STRATEGIES): void {
   const counts: Record<string, number> = { cu: 0, al: 0, zn: 0, sn: 0, pb: 0, ni: 0, ss: 0, lc: 0 };
   const ids = new Set<string>();
