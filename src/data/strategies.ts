@@ -5,7 +5,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s001", name: "LME3M-COMEX0(CU,无成本)", group: "cu", formula: "B*22.046226-A", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 9},{slot: "B", contract: "HG-CMX", dir: "卖", lots: 4}] },
   { id: "s002", name: "SHFE0-COMEX0(CU,无成本)", group: "cu", formula: "B*22.046226*C-A/1.13", decimals: 3, legs: [{slot: "A", contract: "CU0-SHFE", dir: "买", lots: 9},{slot: "B", contract: "HG-CMX", dir: "卖", lots: 4},{slot: "C", contract: "UC0-SGX", dir: "买", lots: 13}] },
   { id: "s003", name: "SHFE0-LME3M(CU,无成本)", group: "cu", formula: "B*C-A/1.13", decimals: 3, legs: [{slot: "A", contract: "CU0-SHFE", dir: "买", lots: 9},{slot: "B", contract: "CU3M-LME", dir: "卖", lots: 4},{slot: "C", contract: "UC0-SGX", dir: "买", lots: 13}] },
-  { id: "s004", name: "CAD3M-CU08 (P+50,UC08,lvl)-120", group: "cu", formula: "(B-(A+50-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU2608-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC2609-SGX", dir: "买", lots: 13},{slot: "D", contract: "UC2608-SGX", dir: "买", lots: 0}] },
   { id: "s005", name: "CAD3M-CU09(P+50,UC09,lvl)-120", group: "cu", formula: "(B-(A+50-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU2609-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC2609-SGX", dir: "买", lots: 13},{slot: "D", contract: "UC2609-SGX", dir: "买", lots: 0}] },
   { id: "s006", name: "CAD3M-CU10(P+50,UC10,lvl)-120", group: "cu", formula: "(B-(A+50-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU2610-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC2609-SGX", dir: "买", lots: 13},{slot: "D", contract: "UC2610-SGX", dir: "买", lots: 0}] },
   { id: "s007", name: "CAD3M-CU11(P+50,UC11,lvl)-120", group: "cu", formula: "(B-(A+50-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU2611-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC2612-SGX", dir: "买", lots: 13},{slot: "D", contract: "UC2611-SGX", dir: "买", lots: 0}] },
@@ -17,7 +16,6 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s013", name: "CAD3M-CU05(P+50,UC01,lvl)-120", group: "cu", formula: "(B-(A+50-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU2705-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC2706-SGX", dir: "买", lots: 13},{slot: "D", contract: "UC2705-SGX", dir: "买", lots: 0}] },
   { id: "s014", name: "CAD3M-CU06(P+50,UC01,lvl)-120", group: "cu", formula: "(B-(A+50-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU2706-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC2706-SGX", dir: "买", lots: 13},{slot: "D", contract: "UC2706-SGX", dir: "买", lots: 0}] },
   { id: "s015", name: "CAD3M-CU07(P+50,UC01,lvl)-120", group: "cu", formula: "(B-(A+50-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "CU3M-LME", dir: "买", lots: 4},{slot: "B", contract: "CU2707-SH", dir: "卖", lots: 17},{slot: "C", contract: "UC2706-SGX", dir: "买", lots: 13},{slot: "D", contract: "UC2707-SGX", dir: "买", lots: 0}] },
-  { id: "s016", name: "LmeSn3M-Sn2608-UC08(p650 lvl)-120", group: "sn", formula: "(B-(A+650-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "SN3M-LME", dir: "买", lots: 2},{slot: "B", contract: "SN2608-SH", dir: "卖", lots: 9},{slot: "C", contract: "UC2609-SGX", dir: "买", lots: 5},{slot: "D", contract: "UC2608-SGX", dir: "买", lots: 0}] },
   { id: "s017", name: "LmeSn3M-Sn2609-UC09(p650, lvl)-120", group: "sn", formula: "(B-(A+650-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "SN3M-LME", dir: "买", lots: 2},{slot: "B", contract: "SN2609-SH", dir: "卖", lots: 9},{slot: "C", contract: "UC2609-SGX", dir: "买", lots: 5},{slot: "D", contract: "UC2609-SGX", dir: "买", lots: 0}] },
   { id: "s018", name: "LmeSn3M-Sn2610-UC10(p650,lvl)-120", group: "sn", formula: "(B-(A+650-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "SN3M-LME", dir: "买", lots: 2},{slot: "B", contract: "SN2610-SH", dir: "卖", lots: 9},{slot: "C", contract: "UC2609-SGX", dir: "买", lots: 5},{slot: "D", contract: "UC2610-SGX", dir: "买", lots: 0}] },
   { id: "s019", name: "LmeSn3M-Sn2611-UC11(p650, lvl)-120", group: "sn", formula: "(B-(A+650-0)*(D+C-C)*(1.13+0.035/36)-B*0.15/360-B*2.5/10000-A/6400*14.4-10-120)/1.13", decimals: 3, legs: [{slot: "A", contract: "SN3M-LME", dir: "买", lots: 2},{slot: "B", contract: "SN2611-SH", dir: "买", lots: 9},{slot: "C", contract: "UC2612-SGX", dir: "买", lots: 5},{slot: "D", contract: "UC2611-SGX", dir: "买", lots: 0}] },
@@ -165,7 +163,7 @@ export const STRATEGIES: StrategyConfig[] = [
   { id: "s169", name: "ZN2611-ZN3M[出口](US$,仓补+60)", group: "zn", formula: "(B+60)-(A*0.12*30/365*0.0375/D+1.5/5*2/D+B/6400*2+30/365*0.0375*A/D+A*0.0003/D)-A/D", decimals: 3, legs: [{slot: "A", contract: "ZN2611-SH", dir: "买", lots: 9},{slot: "B", contract: "ZN3M-LME", dir: "卖", lots: 2},{slot: "C", contract: "UC2612-SGX", dir: "卖", lots: 2},{slot: "D", contract: "UC2611-SGX", dir: "卖", lots: 0}] },
 ];
 
-/** 构建期校验：策略集合必须严格为 161 条。 */
+/** 构建期校验：策略集合必须严格为 159 条。 */
 export function validateStrategies(list: StrategyConfig[] = STRATEGIES): void {
   const counts: Record<string, number> = { cu: 0, al: 0, zn: 0, sn: 0, pb: 0, ni: 0, ss: 0, lc: 0 };
   const ids = new Set<string>();
@@ -182,7 +180,7 @@ export function validateStrategies(list: StrategyConfig[] = STRATEGIES): void {
       if (!slots.has(v as never)) throw new Error(`${'${s.id}'} 公式变量 ${'${v}'} 无对应腿`);
     }
   }
-  if (list.length !== 161) throw new Error(`策略总数应为 161，实际 ${'${list.length}'}`);
+  if (list.length !== 159) throw new Error(`策略总数应为 159，实际 ${'${list.length}'}`);
 }
 
 
